@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#This script will introduce us to Matplotlib, a library used for visualization
+# This script will introduce us to Matplotlib, a library used for visualization
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -19,7 +19,7 @@ plt.xlabel("x")
 plt.ylabel("sin(x)")
 plt.show()
 
-#Adapted from https://matplotlib.org/tutorials/introductory/sample_plots.html
+# Adapted from https://matplotlib.org/tutorials/introductory/sample_plots.html
 data = np.random.randn(2, 100)
 plt.hist(data[0])
 plt.title("Histogram")
@@ -31,4 +31,5 @@ plt.hist2d(data[0], data[1])
 plt.title("2D Histogram")
 plt.xlabel("data[0]")
 plt.ylabel("data[1]")
+plt.colorbar()
 plt.show()
